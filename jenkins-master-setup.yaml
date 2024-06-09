@@ -10,7 +10,7 @@
     - name: Add Jenkins Repository
       apt_repository:
         repo: 'deb https://pkg.jenkins.io/debian-stable binary/'
-      state: present
+        state: present
 
     - name: Install java
       apt:
@@ -30,4 +30,4 @@
     - name: Enable Jenkins Service at boot time
       service:
         name: jenkins
-        enables: yes
+        enabled: yes
